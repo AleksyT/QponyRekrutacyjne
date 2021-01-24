@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondScreenViewController" customModule="QponyRekrutacyjne" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="hqr-nG-JlK" id="Tzx-qO-e7K"/>
+                <outlet property="fromDatePicker" destination="uQ5-Jz-DUC" id="aTd-qe-HcF"/>
+                <outlet property="toDatePicker" destination="d5A-V8-2zh" id="BGa-GW-03e"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IWa-Fb-SCB">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" datePickerMode="date" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQ5-Jz-DUC">
+                            <rect key="frame" x="0.0" y="0.0" width="202" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Rqd-Vz-dtw"/>
+                            </constraints>
+                            <date key="date" timeIntervalSinceReferenceDate="632435131.17908001">
+                                <!--2021-01-15 20:25:31 +0000-->
+                            </date>
+                            <locale key="locale" localeIdentifier="pl"/>
+                        </datePicker>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="d5A-V8-2zh">
+                            <rect key="frame" x="212" y="0.0" width="202" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="IYH-Gd-gVw"/>
+                            </constraints>
+                            <locale key="locale" localeIdentifier="pl"/>
+                        </datePicker>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqr-nG-JlK">
+                    <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.2666666667" green="0.019607843140000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hqr-nG-JlK" secondAttribute="bottom" id="7Z9-Rn-poq"/>
+                <constraint firstItem="hqr-nG-JlK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CmE-qN-dkx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hqr-nG-JlK" secondAttribute="trailing" id="FTc-9e-0pj"/>
+                <constraint firstItem="IWa-Fb-SCB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Qws-NB-6OL"/>
+                <constraint firstItem="IWa-Fb-SCB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VcO-Qz-ALa"/>
+                <constraint firstItem="hqr-nG-JlK" firstAttribute="top" secondItem="IWa-Fb-SCB" secondAttribute="bottom" id="dLp-Jh-S2N"/>
+                <constraint firstAttribute="trailing" secondItem="IWa-Fb-SCB" secondAttribute="trailing" id="m9d-vi-1Gd"/>
+            </constraints>
+            <point key="canvasLocation" x="-203" y="72"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

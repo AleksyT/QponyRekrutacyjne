@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6501540825BE06AA00DE8CC4 /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6501540625BE06AA00DE8CC4 /* SecondScreenViewController.swift */; };
+		6501540925BE06AA00DE8CC4 /* SecondScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6501540725BE06AA00DE8CC4 /* SecondScreenViewController.xib */; };
+		650406A225BDC187003D40EF /* String-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650406A125BDC187003D40EF /* String-Ext.swift */; };
+		653B664E25BE1DBE00EE4451 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B664D25BE1DBE00EE4451 /* CurrencyViewController.swift */; };
+		655A078325BDE7A200C3109E /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655A078225BDE7A200C3109E /* SpinnerView.swift */; };
+		655A079F25BDFC8600C3109E /* ExchangeRatesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655A079E25BDFC8600C3109E /* ExchangeRatesViewController.xib */; };
+		655A07A225BDFD0900C3109E /* ExchangeRatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655A07A125BDFD0900C3109E /* ExchangeRatesViewController.swift */; };
+		6594284325BC6AAA00C06C3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6594284225BC6AAA00C06C3D /* AppDelegate.swift */; };
+		6594284D25BC6AAA00C06C3D /* QponyRekrutacyjne.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6594284B25BC6AAA00C06C3D /* QponyRekrutacyjne.xcdatamodeld */; };
+		6594284F25BC6AAB00C06C3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6594284E25BC6AAB00C06C3D /* Assets.xcassets */; };
+		6594285225BC6AAB00C06C3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6594285025BC6AAB00C06C3D /* LaunchScreen.storyboard */; };
+		65B4B07725BDCD8C005E6C70 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B4B07625BDCD8C005E6C70 /* Colors.swift */; };
+		65F432E325BC790300F602E1 /* coinsAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 65F432E225BC790300F602E1 /* coinsAnimation.json */; };
+		65F432F225BC7E6C00F602E1 /* UIViewController-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F432F125BC7E6C00F602E1 /* UIViewController-Ext.swift */; };
+		65F432FE25BC886300F602E1 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F432FC25BC886300F602E1 /* MainScreenViewController.swift */; };
+		65F432FF25BC886300F602E1 /* MainScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F432FD25BC886300F602E1 /* MainScreenViewController.xib */; };
+		65F4330425BC890D00F602E1 /* EntryAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F4330225BC890D00F602E1 /* EntryAnimationViewController.swift */; };
+		65F4330525BC890D00F602E1 /* EntryAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F4330325BC890D00F602E1 /* EntryAnimationViewController.xib */; };
+		65F4330925BC9C2E00F602E1 /* ExchangeRatesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F4330725BC9C2E00F602E1 /* ExchangeRatesViewCell.swift */; };
+		65F4330A25BC9C2E00F602E1 /* ExchangeRatesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F4330825BC9C2E00F602E1 /* ExchangeRatesViewCell.xib */; };
+		65F4331025BCA28100F602E1 /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F4330F25BCA28100F602E1 /* CurrencyViewModel.swift */; };
+		65F4331325BCA8D300F602E1 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F4331225BCA8D300F602E1 /* Rate.swift */; };
+		65F4331625BCAA1100F602E1 /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F4331525BCAA1100F602E1 /* ExchangeRates.swift */; };
+		8D58F3FC8ADA7483EBDC5696 /* Pods_QponyRekrutacyjne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061C014F56E133B4B141E483 /* Pods_QponyRekrutacyjne.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		061C014F56E133B4B141E483 /* Pods_QponyRekrutacyjne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QponyRekrutacyjne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6501540625BE06AA00DE8CC4 /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
+		6501540725BE06AA00DE8CC4 /* SecondScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondScreenViewController.xib; sourceTree = "<group>"; };
+		650406A125BDC187003D40EF /* String-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-Ext.swift"; sourceTree = "<group>"; };
+		653B664D25BE1DBE00EE4451 /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
+		655A078225BDE7A200C3109E /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		655A079E25BDFC8600C3109E /* ExchangeRatesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeRatesViewController.xib; sourceTree = "<group>"; };
+		655A07A125BDFD0900C3109E /* ExchangeRatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesViewController.swift; sourceTree = "<group>"; };
+		6594283F25BC6AAA00C06C3D /* QponyRekrutacyjne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QponyRekrutacyjne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6594284225BC6AAA00C06C3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6594284C25BC6AAA00C06C3D /* QponyRekrutacyjne.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QponyRekrutacyjne.xcdatamodel; sourceTree = "<group>"; };
+		6594284E25BC6AAB00C06C3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6594285125BC6AAB00C06C3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6594285325BC6AAB00C06C3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65B4B07625BDCD8C005E6C70 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		65F432E225BC790300F602E1 /* coinsAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coinsAnimation.json; sourceTree = "<group>"; };
+		65F432F125BC7E6C00F602E1 /* UIViewController-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-Ext.swift"; sourceTree = "<group>"; };
+		65F432FC25BC886300F602E1 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		65F432FD25BC886300F602E1 /* MainScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenViewController.xib; sourceTree = "<group>"; };
+		65F4330225BC890D00F602E1 /* EntryAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryAnimationViewController.swift; sourceTree = "<group>"; };
+		65F4330325BC890D00F602E1 /* EntryAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EntryAnimationViewController.xib; sourceTree = "<group>"; };
+		65F4330725BC9C2E00F602E1 /* ExchangeRatesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesViewCell.swift; sourceTree = "<group>"; };
+		65F4330825BC9C2E00F602E1 /* ExchangeRatesViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeRatesViewCell.xib; sourceTree = "<group>"; };
+		65F4330F25BCA28100F602E1 /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
+		65F4331225BCA8D300F602E1 /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
+		65F4331525BCAA1100F602E1 /* ExchangeRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRates.swift; sourceTree = "<group>"; };
+		93008CD691C1DA859C05BAEB /* Pods-QponyRekrutacyjne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QponyRekrutacyjne.release.xcconfig"; path = "Target Support Files/Pods-QponyRekrutacyjne/Pods-QponyRekrutacyjne.release.xcconfig"; sourceTree = "<group>"; };
+		ED7F7C992FD10EB9A3E0E8B5 /* Pods-QponyRekrutacyjne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QponyRekrutacyjne.debug.xcconfig"; path = "Target Support Files/Pods-QponyRekrutacyjne/Pods-QponyRekrutacyjne.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6594283C25BC6AAA00C06C3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D58F3FC8ADA7483EBDC5696 /* Pods_QponyRekrutacyjne.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6501540225BE063100DE8CC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65F4331225BCA8D300F602E1 /* Rate.swift */,
+				65F4331525BCAA1100F602E1 /* ExchangeRates.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6501540425BE064100DE8CC4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				65F4330F25BCA28100F602E1 /* CurrencyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6501540525BE065300DE8CC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				65F4330725BC9C2E00F602E1 /* ExchangeRatesViewCell.swift */,
+				65F4330825BC9C2E00F602E1 /* ExchangeRatesViewCell.xib */,
+				655A079E25BDFC8600C3109E /* ExchangeRatesViewController.xib */,
+				655A07A125BDFD0900C3109E /* ExchangeRatesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		653B664C25BE1D8D00EE4451 /* CurrencyScreen */ = {
+			isa = PBXGroup;
+			children = (
+				653B664D25BE1DBE00EE4451 /* CurrencyViewController.swift */,
+			);
+			path = CurrencyScreen;
+			sourceTree = "<group>";
+		};
+		655A078A25BDF8D400C3109E /* SecondScreen */ = {
+			isa = PBXGroup;
+			children = (
+				6501540625BE06AA00DE8CC4 /* SecondScreenViewController.swift */,
+				6501540725BE06AA00DE8CC4 /* SecondScreenViewController.xib */,
+			);
+			path = SecondScreen;
+			sourceTree = "<group>";
+		};
+		655A07A925BE053B00C3109E /* ExchangeRatesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				6501540225BE063100DE8CC4 /* Model */,
+				6501540525BE065300DE8CC4 /* View */,
+				6501540425BE064100DE8CC4 /* ViewModel */,
+			);
+			name = ExchangeRatesScreen;
+			path = MainScreen/ExchangeRatesScreen;
+			sourceTree = "<group>";
+		};
+		6594283625BC6AAA00C06C3D = {
+			isa = PBXGroup;
+			children = (
+				6594284125BC6AAA00C06C3D /* QponyRekrutacyjne */,
+				6594284025BC6AAA00C06C3D /* Products */,
+				FED7D1C20644472438D64265 /* Pods */,
+				D9A5A5D81278C8A895DD50DF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6594284025BC6AAA00C06C3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6594283F25BC6AAA00C06C3D /* QponyRekrutacyjne.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6594284125BC6AAA00C06C3D /* QponyRekrutacyjne */ = {
+			isa = PBXGroup;
+			children = (
+				6594284225BC6AAA00C06C3D /* AppDelegate.swift */,
+				6594285025BC6AAB00C06C3D /* LaunchScreen.storyboard */,
+				6594286125BC6E8C00C06C3D /* EntryAnimationView */,
+				65F432ED25BC7AA900F602E1 /* MainScreen */,
+				655A078A25BDF8D400C3109E /* SecondScreen */,
+				655A07A925BE053B00C3109E /* ExchangeRatesScreen */,
+				653B664C25BE1D8D00EE4451 /* CurrencyScreen */,
+				65F432EE25BC7AC300F602E1 /* Extras */,
+				65F432F025BC7E5600F602E1 /* Extensions */,
+				6594284E25BC6AAB00C06C3D /* Assets.xcassets */,
+				6594285325BC6AAB00C06C3D /* Info.plist */,
+				6594284B25BC6AAA00C06C3D /* QponyRekrutacyjne.xcdatamodeld */,
+			);
+			path = QponyRekrutacyjne;
+			sourceTree = "<group>";
+		};
+		6594286125BC6E8C00C06C3D /* EntryAnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				65F4330225BC890D00F602E1 /* EntryAnimationViewController.swift */,
+				65F4330325BC890D00F602E1 /* EntryAnimationViewController.xib */,
+			);
+			path = EntryAnimationView;
+			sourceTree = "<group>";
+		};
+		65F432ED25BC7AA900F602E1 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				65F432FC25BC886300F602E1 /* MainScreenViewController.swift */,
+				65F432FD25BC886300F602E1 /* MainScreenViewController.xib */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		65F432EE25BC7AC300F602E1 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				65F432E225BC790300F602E1 /* coinsAnimation.json */,
+				65B4B07625BDCD8C005E6C70 /* Colors.swift */,
+				655A078225BDE7A200C3109E /* SpinnerView.swift */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
+		65F432F025BC7E5600F602E1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				65F432F125BC7E6C00F602E1 /* UIViewController-Ext.swift */,
+				650406A125BDC187003D40EF /* String-Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D9A5A5D81278C8A895DD50DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				061C014F56E133B4B141E483 /* Pods_QponyRekrutacyjne.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FED7D1C20644472438D64265 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED7F7C992FD10EB9A3E0E8B5 /* Pods-QponyRekrutacyjne.debug.xcconfig */,
+				93008CD691C1DA859C05BAEB /* Pods-QponyRekrutacyjne.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6594283E25BC6AAA00C06C3D /* QponyRekrutacyjne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6594285625BC6AAB00C06C3D /* Build configuration list for PBXNativeTarget "QponyRekrutacyjne" */;
+			buildPhases = (
+				ACCDDCF7331C2E0F995F5A90 /* [CP] Check Pods Manifest.lock */,
+				6594283B25BC6AAA00C06C3D /* Sources */,
+				6594283C25BC6AAA00C06C3D /* Frameworks */,
+				6594283D25BC6AAA00C06C3D /* Resources */,
+				10647E1C3201D98C7B1DD587 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QponyRekrutacyjne;
+			productName = QponyRekrutacyjne;
+			productReference = 6594283F25BC6AAA00C06C3D /* QponyRekrutacyjne.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6594283725BC6AAA00C06C3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					6594283E25BC6AAA00C06C3D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 6594283A25BC6AAA00C06C3D /* Build configuration list for PBXProject "QponyRekrutacyjne" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6594283625BC6AAA00C06C3D;
+			productRefGroup = 6594284025BC6AAA00C06C3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6594283E25BC6AAA00C06C3D /* QponyRekrutacyjne */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6594283D25BC6AAA00C06C3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F4330A25BC9C2E00F602E1 /* ExchangeRatesViewCell.xib in Resources */,
+				6594285225BC6AAB00C06C3D /* LaunchScreen.storyboard in Resources */,
+				6501540925BE06AA00DE8CC4 /* SecondScreenViewController.xib in Resources */,
+				65F432FF25BC886300F602E1 /* MainScreenViewController.xib in Resources */,
+				655A079F25BDFC8600C3109E /* ExchangeRatesViewController.xib in Resources */,
+				6594284F25BC6AAB00C06C3D /* Assets.xcassets in Resources */,
+				65F4330525BC890D00F602E1 /* EntryAnimationViewController.xib in Resources */,
+				65F432E325BC790300F602E1 /* coinsAnimation.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10647E1C3201D98C7B1DD587 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QponyRekrutacyjne/Pods-QponyRekrutacyjne-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QponyRekrutacyjne/Pods-QponyRekrutacyjne-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QponyRekrutacyjne/Pods-QponyRekrutacyjne-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACCDDCF7331C2E0F995F5A90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QponyRekrutacyjne-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6594283B25BC6AAA00C06C3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F432FE25BC886300F602E1 /* MainScreenViewController.swift in Sources */,
+				65B4B07725BDCD8C005E6C70 /* Colors.swift in Sources */,
+				65F4331325BCA8D300F602E1 /* Rate.swift in Sources */,
+				650406A225BDC187003D40EF /* String-Ext.swift in Sources */,
+				653B664E25BE1DBE00EE4451 /* CurrencyViewController.swift in Sources */,
+				65F4331025BCA28100F602E1 /* CurrencyViewModel.swift in Sources */,
+				6501540825BE06AA00DE8CC4 /* SecondScreenViewController.swift in Sources */,
+				65F4330425BC890D00F602E1 /* EntryAnimationViewController.swift in Sources */,
+				65F4331625BCAA1100F602E1 /* ExchangeRates.swift in Sources */,
+				65F4330925BC9C2E00F602E1 /* ExchangeRatesViewCell.swift in Sources */,
+				655A07A225BDFD0900C3109E /* ExchangeRatesViewController.swift in Sources */,
+				65F432F225BC7E6C00F602E1 /* UIViewController-Ext.swift in Sources */,
+				6594284D25BC6AAA00C06C3D /* QponyRekrutacyjne.xcdatamodeld in Sources */,
+				655A078325BDE7A200C3109E /* SpinnerView.swift in Sources */,
+				6594284325BC6AAA00C06C3D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6594285025BC6AAB00C06C3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6594285125BC6AAB00C06C3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6594285425BC6AAB00C06C3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6594285525BC6AAB00C06C3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6594285725BC6AAB00C06C3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7F7C992FD10EB9A3E0E8B5 /* Pods-QponyRekrutacyjne.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9734TBY65C;
+				INFOPLIST_FILE = QponyRekrutacyjne/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AleksyTylkowski.QponyRekrutacyjne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6594285825BC6AAB00C06C3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93008CD691C1DA859C05BAEB /* Pods-QponyRekrutacyjne.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9734TBY65C;
+				INFOPLIST_FILE = QponyRekrutacyjne/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AleksyTylkowski.QponyRekrutacyjne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6594283A25BC6AAA00C06C3D /* Build configuration list for PBXProject "QponyRekrutacyjne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6594285425BC6AAB00C06C3D /* Debug */,
+				6594285525BC6AAB00C06C3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6594285625BC6AAB00C06C3D /* Build configuration list for PBXNativeTarget "QponyRekrutacyjne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6594285725BC6AAB00C06C3D /* Debug */,
+				6594285825BC6AAB00C06C3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6594284B25BC6AAA00C06C3D /* QponyRekrutacyjne.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6594284C25BC6AAA00C06C3D /* QponyRekrutacyjne.xcdatamodel */,
+			);
+			currentVersion = 6594284C25BC6AAA00C06C3D /* QponyRekrutacyjne.xcdatamodel */;
+			path = QponyRekrutacyjne.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6594283725BC6AAA00C06C3D /* Project object */;
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainScreenViewController" customModule="QponyRekrutacyjne" customModuleProvider="target">
+            <connections>
+                <outlet property="aButton" destination="Ztp-P6-pLS" id="K7r-Ju-ZQo"/>
+                <outlet property="bButton" destination="0xN-df-gXU" id="M1n-PO-j5k"/>
+                <outlet property="cButton" destination="GJE-MD-eYA" id="wUG-ES-WOJ"/>
+                <outlet property="containerView" destination="uJP-Ym-gNa" id="08Q-Vi-VBi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VbD-aP-v8p">
+                    <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Ztp-P6-pLS">
+                            <rect key="frame" x="0.0" y="0.0" width="103.5" height="100"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="26"/>
+                            <state key="normal" title="A">
+                                <color key="titleColor" red="0.36862745098039218" green="0.88627450980392153" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onTableAction:" destination="-1" eventType="touchUpInside" id="O6w-AT-aRR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="0xN-df-gXU">
+                            <rect key="frame" x="103.5" y="0.0" width="103.5" height="100"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                            <state key="normal" title="B">
+                                <color key="titleColor" red="0.36862745099999999" green="0.8862745098" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onTableAction:" destination="-1" eventType="touchUpInside" id="7Z5-Tp-MYk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="GJE-MD-eYA">
+                            <rect key="frame" x="207" y="0.0" width="103.5" height="100"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                            <state key="normal" title="C">
+                                <color key="titleColor" red="0.36862745099999999" green="0.8862745098" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onTableAction:" destination="-1" eventType="touchUpInside" id="JVP-su-xUb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qxE-Ot-w4N">
+                            <rect key="frame" x="310.5" y="0.0" width="103.5" height="100"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="refresh">
+                                <color key="titleColor" red="0.36862745099999999" green="0.8862745098" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="g6E-0t-yqm"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJP-Ym-gNa">
+                    <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.26815070739010599" green="0.018984960948837032" blue="0.29611175228851006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uJP-Ym-gNa" secondAttribute="trailing" id="3N0-ES-N8b"/>
+                <constraint firstItem="VbD-aP-v8p" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="5ht-XJ-lp9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uJP-Ym-gNa" secondAttribute="bottom" id="XBX-Ud-7Gz"/>
+                <constraint firstItem="uJP-Ym-gNa" firstAttribute="top" secondItem="VbD-aP-v8p" secondAttribute="bottom" id="hRO-tx-aUw"/>
+                <constraint firstItem="VbD-aP-v8p" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jcg-D9-IMH"/>
+                <constraint firstItem="uJP-Ym-gNa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rff-GY-0r2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VbD-aP-v8p" secondAttribute="trailing" id="xLh-Fv-X9q"/>
+            </constraints>
+            <point key="canvasLocation" x="-106" y="73"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="refresh" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
