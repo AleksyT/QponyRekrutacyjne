@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		6501540825BE06AA00DE8CC4 /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6501540625BE06AA00DE8CC4 /* SecondScreenViewController.swift */; };
 		6501540925BE06AA00DE8CC4 /* SecondScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6501540725BE06AA00DE8CC4 /* SecondScreenViewController.xib */; };
+		6502A4AD25BE386400B35964 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6502A4AC25BE386400B35964 /* Currency.swift */; };
 		650406A225BDC187003D40EF /* String-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650406A125BDC187003D40EF /* String-Ext.swift */; };
 		653B664E25BE1DBE00EE4451 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B664D25BE1DBE00EE4451 /* CurrencyViewController.swift */; };
+		653B665E25BE2E2900EE4451 /* StandardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B665D25BE2E2900EE4451 /* StandardTableViewController.swift */; };
 		655A078325BDE7A200C3109E /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655A078225BDE7A200C3109E /* SpinnerView.swift */; };
-		655A079F25BDFC8600C3109E /* ExchangeRatesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655A079E25BDFC8600C3109E /* ExchangeRatesViewController.xib */; };
+		655A079F25BDFC8600C3109E /* StandardTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655A079E25BDFC8600C3109E /* StandardTableViewController.xib */; };
 		655A07A225BDFD0900C3109E /* ExchangeRatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655A07A125BDFD0900C3109E /* ExchangeRatesViewController.swift */; };
 		6594284325BC6AAA00C06C3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6594284225BC6AAA00C06C3D /* AppDelegate.swift */; };
 		6594284D25BC6AAA00C06C3D /* QponyRekrutacyjne.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6594284B25BC6AAA00C06C3D /* QponyRekrutacyjne.xcdatamodeld */; };
@@ -27,7 +29,7 @@
 		65F4330525BC890D00F602E1 /* EntryAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F4330325BC890D00F602E1 /* EntryAnimationViewController.xib */; };
 		65F4330925BC9C2E00F602E1 /* ExchangeRatesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F4330725BC9C2E00F602E1 /* ExchangeRatesViewCell.swift */; };
 		65F4330A25BC9C2E00F602E1 /* ExchangeRatesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F4330825BC9C2E00F602E1 /* ExchangeRatesViewCell.xib */; };
-		65F4331025BCA28100F602E1 /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F4330F25BCA28100F602E1 /* CurrencyViewModel.swift */; };
+		65F4331025BCA28100F602E1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F4330F25BCA28100F602E1 /* ViewModel.swift */; };
 		65F4331325BCA8D300F602E1 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F4331225BCA8D300F602E1 /* Rate.swift */; };
 		65F4331625BCAA1100F602E1 /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F4331525BCAA1100F602E1 /* ExchangeRates.swift */; };
 		8D58F3FC8ADA7483EBDC5696 /* Pods_QponyRekrutacyjne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061C014F56E133B4B141E483 /* Pods_QponyRekrutacyjne.framework */; };
@@ -37,10 +39,12 @@
 		061C014F56E133B4B141E483 /* Pods_QponyRekrutacyjne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QponyRekrutacyjne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6501540625BE06AA00DE8CC4 /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
 		6501540725BE06AA00DE8CC4 /* SecondScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondScreenViewController.xib; sourceTree = "<group>"; };
+		6502A4AC25BE386400B35964 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		650406A125BDC187003D40EF /* String-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-Ext.swift"; sourceTree = "<group>"; };
 		653B664D25BE1DBE00EE4451 /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
+		653B665D25BE2E2900EE4451 /* StandardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTableViewController.swift; sourceTree = "<group>"; };
 		655A078225BDE7A200C3109E /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
-		655A079E25BDFC8600C3109E /* ExchangeRatesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeRatesViewController.xib; sourceTree = "<group>"; };
+		655A079E25BDFC8600C3109E /* StandardTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandardTableViewController.xib; sourceTree = "<group>"; };
 		655A07A125BDFD0900C3109E /* ExchangeRatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesViewController.swift; sourceTree = "<group>"; };
 		6594283F25BC6AAA00C06C3D /* QponyRekrutacyjne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QponyRekrutacyjne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6594284225BC6AAA00C06C3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +61,7 @@
 		65F4330325BC890D00F602E1 /* EntryAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EntryAnimationViewController.xib; sourceTree = "<group>"; };
 		65F4330725BC9C2E00F602E1 /* ExchangeRatesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesViewCell.swift; sourceTree = "<group>"; };
 		65F4330825BC9C2E00F602E1 /* ExchangeRatesViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeRatesViewCell.xib; sourceTree = "<group>"; };
-		65F4330F25BCA28100F602E1 /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
+		65F4330F25BCA28100F602E1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		65F4331225BCA8D300F602E1 /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
 		65F4331525BCAA1100F602E1 /* ExchangeRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRates.swift; sourceTree = "<group>"; };
 		93008CD691C1DA859C05BAEB /* Pods-QponyRekrutacyjne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QponyRekrutacyjne.release.xcconfig"; path = "Target Support Files/Pods-QponyRekrutacyjne/Pods-QponyRekrutacyjne.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,7 +92,7 @@
 		6501540425BE064100DE8CC4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				65F4330F25BCA28100F602E1 /* CurrencyViewModel.swift */,
+				65F4330F25BCA28100F602E1 /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -98,7 +102,6 @@
 			children = (
 				65F4330725BC9C2E00F602E1 /* ExchangeRatesViewCell.swift */,
 				65F4330825BC9C2E00F602E1 /* ExchangeRatesViewCell.xib */,
-				655A079E25BDFC8600C3109E /* ExchangeRatesViewController.xib */,
 				655A07A125BDFD0900C3109E /* ExchangeRatesViewController.swift */,
 			);
 			path = View;
@@ -108,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				653B664D25BE1DBE00EE4451 /* CurrencyViewController.swift */,
+				6502A4AC25BE386400B35964 /* Currency.swift */,
 			);
 			path = CurrencyScreen;
 			sourceTree = "<group>";
@@ -124,8 +128,8 @@
 		655A07A925BE053B00C3109E /* ExchangeRatesScreen */ = {
 			isa = PBXGroup;
 			children = (
-				6501540225BE063100DE8CC4 /* Model */,
 				6501540525BE065300DE8CC4 /* View */,
+				6501540225BE063100DE8CC4 /* Model */,
 				6501540425BE064100DE8CC4 /* ViewModel */,
 			);
 			name = ExchangeRatesScreen;
@@ -160,6 +164,9 @@
 				655A078A25BDF8D400C3109E /* SecondScreen */,
 				655A07A925BE053B00C3109E /* ExchangeRatesScreen */,
 				653B664C25BE1D8D00EE4451 /* CurrencyScreen */,
+				655A078225BDE7A200C3109E /* SpinnerView.swift */,
+				655A079E25BDFC8600C3109E /* StandardTableViewController.xib */,
+				653B665D25BE2E2900EE4451 /* StandardTableViewController.swift */,
 				65F432EE25BC7AC300F602E1 /* Extras */,
 				65F432F025BC7E5600F602E1 /* Extensions */,
 				6594284E25BC6AAB00C06C3D /* Assets.xcassets */,
@@ -192,7 +199,6 @@
 			children = (
 				65F432E225BC790300F602E1 /* coinsAnimation.json */,
 				65B4B07625BDCD8C005E6C70 /* Colors.swift */,
-				655A078225BDE7A200C3109E /* SpinnerView.swift */,
 			);
 			path = Extras;
 			sourceTree = "<group>";
@@ -286,7 +292,7 @@
 				6594285225BC6AAB00C06C3D /* LaunchScreen.storyboard in Resources */,
 				6501540925BE06AA00DE8CC4 /* SecondScreenViewController.xib in Resources */,
 				65F432FF25BC886300F602E1 /* MainScreenViewController.xib in Resources */,
-				655A079F25BDFC8600C3109E /* ExchangeRatesViewController.xib in Resources */,
+				655A079F25BDFC8600C3109E /* StandardTableViewController.xib in Resources */,
 				6594284F25BC6AAB00C06C3D /* Assets.xcassets in Resources */,
 				65F4330525BC890D00F602E1 /* EntryAnimationViewController.xib in Resources */,
 				65F432E325BC790300F602E1 /* coinsAnimation.json in Resources */,
@@ -344,16 +350,18 @@
 			files = (
 				65F432FE25BC886300F602E1 /* MainScreenViewController.swift in Sources */,
 				65B4B07725BDCD8C005E6C70 /* Colors.swift in Sources */,
+				653B665E25BE2E2900EE4451 /* StandardTableViewController.swift in Sources */,
 				65F4331325BCA8D300F602E1 /* Rate.swift in Sources */,
 				650406A225BDC187003D40EF /* String-Ext.swift in Sources */,
 				653B664E25BE1DBE00EE4451 /* CurrencyViewController.swift in Sources */,
-				65F4331025BCA28100F602E1 /* CurrencyViewModel.swift in Sources */,
+				65F4331025BCA28100F602E1 /* ViewModel.swift in Sources */,
 				6501540825BE06AA00DE8CC4 /* SecondScreenViewController.swift in Sources */,
 				65F4330425BC890D00F602E1 /* EntryAnimationViewController.swift in Sources */,
 				65F4331625BCAA1100F602E1 /* ExchangeRates.swift in Sources */,
 				65F4330925BC9C2E00F602E1 /* ExchangeRatesViewCell.swift in Sources */,
 				655A07A225BDFD0900C3109E /* ExchangeRatesViewController.swift in Sources */,
 				65F432F225BC7E6C00F602E1 /* UIViewController-Ext.swift in Sources */,
+				6502A4AD25BE386400B35964 /* Currency.swift in Sources */,
 				6594284D25BC6AAA00C06C3D /* QponyRekrutacyjne.xcdatamodeld in Sources */,
 				655A078325BDE7A200C3109E /* SpinnerView.swift in Sources */,
 				6594284325BC6AAA00C06C3D /* AppDelegate.swift in Sources */,

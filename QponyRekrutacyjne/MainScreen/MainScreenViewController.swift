@@ -46,6 +46,20 @@ class MainScreenViewController: UIViewController {
         exchangeRatesTableViewController.getExchangeRates(fromTable: table)
     }
     
+    @IBAction func onRefresh(_ sender: Any) {
+        let heavyFont = UIFont.systemFont(ofSize: 26.0, weight: .heavy)
+        var table: String
+        if bButton.titleLabel?.font == heavyFont {
+            table = Table.B.rawValue
+        } else if cButton.titleLabel?.font == heavyFont {
+            table = Table.C.rawValue
+        } else {
+            table = Table.A.rawValue
+        }
+        exchangeRatesTableViewController.getExchangeRates(fromTable: table)
+    }
+    
+    
     private func makeButtons(selected selectedButton: UIButton, unselected unselectedButtons: [UIButton]) {
         selectedButton.titleLabel?.font = UIFont.systemFont(ofSize: 26.0, weight: .heavy)
         unselectedButtons.forEach {

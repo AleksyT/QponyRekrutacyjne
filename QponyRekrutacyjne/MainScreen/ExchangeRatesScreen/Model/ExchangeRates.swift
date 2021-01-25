@@ -10,6 +10,7 @@ import Foundation
 struct ExchangeRates: Codable {
     let table: String
     let no: String
+    let tradingDate: String?
     let effectiveDate: String
     let rates: [Rate]
 }

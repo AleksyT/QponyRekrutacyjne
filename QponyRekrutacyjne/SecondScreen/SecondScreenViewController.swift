@@ -9,18 +9,19 @@ import UIKit
 
 class SecondScreenViewController: UIViewController {
     
-    let viewModel: CurrencyViewModel
-    
+    let viewModel: ViewModel
+
     @IBOutlet weak var fromDatePicker: UIDatePicker!
     @IBOutlet weak var toDatePicker: UIDatePicker!
     @IBOutlet weak var containerView: UIView!
     
-    private var currencyTableViewController: CurrencyViewController
+    private var currencyTableViewController: CurrencyViewController?
     
     init(title: String, table: String, code: String) {
-        viewModel = CurrencyViewModel()
-        currencyTableViewController = CurrencyViewController(table: table, code: code)
+        viewModel = ViewModel()
         super.init(nibName: String(describing: Self.self), bundle: nil)
+                
+        currencyTableViewController = CurrencyViewController(table: table, code: code, fromDate: "2020-01-01", toDate: "2020-01-25")
         self.title = title
     }
     
@@ -30,6 +31,18 @@ class SecondScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        attachChild(currencyTableViewController, inside: containerView)
+        attachChild(currencyTableViewController!, inside: containerView)
+    }
+    
+    @IBAction func onDateChange(_ sender: Any) {
+        guard let table = currencyTableViewController?.table,
+              let code = currencyTableViewController?.table else { return }
+        currencyTableViewController?.getCurrencyExchangeRates(fromTable: table, code: code, fromDate: toDate(date: fromDatePicker.date), toDate: toDate(date: toDatePicker.date))
+    }
+    
+    func toDate(date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        return dateFormatter.string(from: date)
     }
 }

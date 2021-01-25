@@ -12,8 +12,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondScreenViewController" customModule="QponyRekrutacyjne" customModuleProvider="target">
             <connections>
                 <outlet property="containerView" destination="hqr-nG-JlK" id="Tzx-qO-e7K"/>
-                <outlet property="fromDatePicker" destination="uQ5-Jz-DUC" id="aTd-qe-HcF"/>
-                <outlet property="toDatePicker" destination="d5A-V8-2zh" id="BGa-GW-03e"/>
+                <outlet property="fromDatePicker" destination="V0Z-Pw-yBv" id="GcA-BB-YR2"/>
+                <outlet property="toDatePicker" destination="f1y-vx-mNb" id="IS9-tB-rfB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,30 +22,93 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IWa-Fb-SCB">
-                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IWa-Fb-SCB">
+                    <rect key="frame" x="0.0" y="44" width="414" height="200"/>
                     <subviews>
-                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" datePickerMode="date" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQ5-Jz-DUC">
-                            <rect key="frame" x="0.0" y="0.0" width="202" height="50"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="50" id="Rqd-Vz-dtw"/>
-                            </constraints>
-                            <date key="date" timeIntervalSinceReferenceDate="632435131.17908001">
-                                <!--2021-01-15 20:25:31 +0000-->
-                            </date>
-                            <locale key="locale" localeIdentifier="pl"/>
-                        </datePicker>
-                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="d5A-V8-2zh">
-                            <rect key="frame" x="212" y="0.0" width="202" height="50"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="50" id="IYH-Gd-gVw"/>
-                            </constraints>
-                            <locale key="locale" localeIdentifier="pl"/>
-                        </datePicker>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="t9u-yR-ORZ">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTc-Ss-oVR">
+                                    <rect key="frame" x="0.0" y="0.0" width="207" height="95"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26u-6B-4o0">
+                                            <rect key="frame" x="72" y="32" width="63.5" height="31.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                            <color key="textColor" red="0.2666666667" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="26u-6B-4o0" firstAttribute="centerX" secondItem="yTc-Ss-oVR" secondAttribute="centerX" id="aHZ-em-hty"/>
+                                        <constraint firstItem="26u-6B-4o0" firstAttribute="centerY" secondItem="yTc-Ss-oVR" secondAttribute="centerY" id="zne-Jd-rhn"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DlX-Mh-wJk">
+                                    <rect key="frame" x="207" y="0.0" width="207" height="95"/>
+                                    <subviews>
+                                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0Z-Pw-yBv">
+                                            <rect key="frame" x="-56.5" y="-60.5" width="320" height="216"/>
+                                            <date key="date" timeIntervalSinceReferenceDate="599534026.73538208">
+                                                <!--2020-01-01 01:13:46 +0000-->
+                                            </date>
+                                            <connections>
+                                                <action selector="onDateChange:" destination="-1" eventType="valueChanged" id="0aI-wV-O0D"/>
+                                            </connections>
+                                        </datePicker>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="V0Z-Pw-yBv" firstAttribute="centerY" secondItem="DlX-Mh-wJk" secondAttribute="centerY" id="h71-qh-NJa"/>
+                                        <constraint firstItem="V0Z-Pw-yBv" firstAttribute="centerX" secondItem="DlX-Mh-wJk" secondAttribute="centerX" id="nwa-Xw-Hdi"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="553-Ho-xpm">
+                            <rect key="frame" x="0.0" y="105" width="414" height="95"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YFw-qM-kSi">
+                                    <rect key="frame" x="0.0" y="0.0" width="207" height="95"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7K-e3-pEz">
+                                            <rect key="frame" x="87.5" y="32" width="32.5" height="31.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                            <color key="textColor" red="0.2666666667" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="g7K-e3-pEz" firstAttribute="centerX" secondItem="YFw-qM-kSi" secondAttribute="centerX" id="I0b-bU-GJx"/>
+                                        <constraint firstItem="g7K-e3-pEz" firstAttribute="centerY" secondItem="YFw-qM-kSi" secondAttribute="centerY" id="SXE-xx-SMO"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJb-7w-2Ep">
+                                    <rect key="frame" x="207" y="0.0" width="207" height="95"/>
+                                    <subviews>
+                                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="f1y-vx-mNb">
+                                            <rect key="frame" x="-56.5" y="-60.5" width="320" height="216"/>
+                                            <connections>
+                                                <action selector="onDateChange:" destination="-1" eventType="valueChanged" id="FXQ-2X-bq5"/>
+                                            </connections>
+                                        </datePicker>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="f1y-vx-mNb" firstAttribute="centerX" secondItem="uJb-7w-2Ep" secondAttribute="centerX" id="Afa-2w-asr"/>
+                                        <constraint firstItem="f1y-vx-mNb" firstAttribute="centerY" secondItem="uJb-7w-2Ep" secondAttribute="centerY" id="ioo-oq-Yyz"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
                     </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="xBi-oA-IET"/>
+                    </constraints>
                 </stackView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqr-nG-JlK">
-                    <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                    <rect key="frame" x="0.0" y="244" width="414" height="618"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
             </subviews>

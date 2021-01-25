@@ -66,6 +66,9 @@
                             <state key="normal" image="refresh">
                                 <color key="titleColor" red="0.36862745099999999" green="0.8862745098" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="onRefresh:" destination="-1" eventType="touchUpInside" id="sEV-EQ-79m"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>

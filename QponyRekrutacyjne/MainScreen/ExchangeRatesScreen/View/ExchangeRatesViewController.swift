@@ -7,19 +7,11 @@
 
 import UIKit
 
-class ExchangeRatesViewController: UIViewController {
+class ExchangeRatesViewController: StandardTableViewController {
+    private var exchangeRates: ExchangeRates?    
     
-    private var viewModel: CurrencyViewModel
-    private var exchangeRates: ExchangeRates?
-    private var spinner: SpinnerView = SpinnerView()
-    private static let cellIdentifier = String(describing: ExchangeRatesViewCell.self)
-    var currentTable: String?
-    
-    @IBOutlet private var tableView: UITableView!
-    
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        viewModel = CurrencyViewModel()
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    init() {
+        super.init(nibName: String(describing: StandardTableViewController.self), bundle: nil)
     }
     
     required init?(coder: NSCoder) {
@@ -29,41 +21,10 @@ class ExchangeRatesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initTableView()
-        initialize()
-    }
-    
-    func initialize() {
-        currentTable = Table.A.rawValue
-        getExchangeRates(fromTable: Table.A.rawValue)
-    }
-    
-    private func showSpinner() {
-        self.view.addSubview(spinner)
-        spinner.translatesAutoresizingMaskIntoConstraints = false
-        spinner.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        spinner.heightAnchor.constraint(equalToConstant: 100).isActive = true
-        spinner.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        spinner.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-    }
-    
-    private func hideSpinner() {
-        spinner.removeFromSuperview()
-    }
-    
-    private func initTableView() {
-        tableView.backgroundColor = Colors().deepPurple
-        tableView.register(UINib(nibName: Self.cellIdentifier, bundle: Bundle(for: Self.self)), forCellReuseIdentifier: Self.cellIdentifier)
         tableView.delegate = self
         tableView.dataSource = self
-    }
-    
-    private func showError(_ error: Error) {
-        DispatchQueue.main.async {
-            let alert = UIAlertController(title: "Error!", message: "Couldn't load exchange rates:  \(error)", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-            self.hideSpinner()
-        }
+        currentTable = Table.A.rawValue
+        getExchangeRates(fromTable: Table.A.rawValue)
     }
     
     func getExchangeRates(fromTable table: String) {
@@ -74,24 +35,7 @@ class ExchangeRatesViewController: UIViewController {
             case .failure(let error):
                 self.showError(error)
             case .success(let exchangeRates):
-                self.exchangeRates = exchangeRates.first
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                    self.hideSpinner()
-                }
-            }
-        })
-    }
-    
-    func getCurrencyExchangeRates(fromTable table: String, code: String, fromDate: String, toDate: String) {
-        self.currentTable = table
-        self.showSpinner()
-        viewModel.getCurrencyExchangeRates(fromTable: table, code: code, fromDate: fromDate, toDate: toDate, completion: { result in
-            switch result {
-            case .failure(let error):
-                self.showError(error)
-            case .success(let exchangeRates):
-                self.exchangeRates = exchangeRates.first
+                self.exchangeRates = (exchangeRates as? [ExchangeRates])?.first
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                     self.hideSpinner()
